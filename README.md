@@ -1,4 +1,4 @@
-const-max-float32
+Max Float32
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,25 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-const-max-float32' );
+var MAX_FLOAT32 = require( 'compute-const-max-float32' );
 ```
 
-#### foo( arr )
+#### MAX_FLOAT32
 
-What does this function do?
+Maximum single-precision floating-point number.
+
+``` javascript
+MAX_FLOAT32 === Math.pow( 2, 127 ) * ( 2 - 1 / Math.pow( 2, 23 ) );
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-const-max-float32' );
+var MAX_FLOAT32 = require( 'compute-const-max-float32' );
+
+console.log( MAX_FLOAT32 );
+// returns 3.4028234663852886e+38
 ```
 
 To run the example code from the top-level application directory,

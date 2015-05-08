@@ -25,7 +25,15 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "max",
+    "maximum",
+    "float32",
+    "float",
+    "single-precision",
+    "32-bit",
+    "const",
+    "constant"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/const-max-float32/issues"

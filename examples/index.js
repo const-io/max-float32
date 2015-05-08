@@ -1,3 +1,5 @@
 'use strict';
 
-var foo = require( './../lib' );
+var MAX_FLOAT32 = require( './../lib' );
+
+console.log( MAX_FLOAT32 );
