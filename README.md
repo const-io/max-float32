@@ -8,14 +8,14 @@ MAX FLOAT32
 ## Installation
 
 ``` bash
-$ npm install compute-const-max-float32
+$ npm install const-max-float32
 ```
 
 
 ## Usage
 
 ``` javascript
-var MAX_FLOAT32 = require( 'compute-const-max-float32' );
+var MAX_FLOAT32 = require( 'const-max-float32' );
 ```
 
 #### MAX_FLOAT32
@@ -30,7 +30,7 @@ MAX_FLOAT32 === Math.pow( 2, 127 ) * ( 2 - 1 / Math.pow( 2, 23 ) );
 ## Examples
 
 ``` javascript
-var MAX_FLOAT32 = require( 'compute-const-max-float32' );
+var MAX_FLOAT32 = require( 'const-max-float32' );
 
 console.log( MAX_FLOAT32 );
 // returns 3.4028234663852886e+38
@@ -100,8 +100,8 @@ $ make view-browser-tests
 Copyright &copy; 2015-2016. The [Compute.io][compute-io] Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/compute-const-max-float32.svg
-[npm-url]: https://npmjs.org/package/compute-const-max-float32
+[npm-image]: http://img.shields.io/npm/v/const-max-float32.svg
+[npm-url]: https://npmjs.org/package/const-max-float32
 
 [build-image]: http://img.shields.io/travis/const-io/max-float32/master.svg
 [build-url]: https://travis-ci.org/const-io/max-float32
