@@ -1,27 +1,22 @@
-/* global require, describe, it */
 'use strict';
 
 // MODULES //
 
-var // Expectation library:
-	chai = require( 'chai' ),
-
-	// Module to be tested:
-	CONST = require( './../lib' );
-
-
-// VARIABLES //
-
-var expect = chai.expect,
-	assert = chai.assert;
+var tape = require( 'tape' );
+var toFloat32 = require( 'float64-to-float32' );
+var pow = require( 'math-power' );
+var CONST = require( './../lib' );
 
 
 // TESTS //
 
-describe( 'compute-const-min-float32', function tests() {
+tape( 'main export is a number', function test( t ) {
+	t.equal( typeof CONST, 'number', 'main export is a number' );
+	t.end();
+});
 
-	it( 'should export a number', function test() {
-		expect( CONST ).to.be.a( 'number' );
-	});
-
+tape( 'export equals the maximum single-precision floating-point number', function test( t ) {
+	var v = pow( 2, 127 ) * (2 - 1/pow(2,23));
+	t.equal( CONST, toFloat32( v ), 'equals max float' );
+	t.end();
 });
