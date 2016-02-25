@@ -49,13 +49,16 @@
   "bugs": {
     "url": "https://github.com/const-io/max-float32/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "float64-to-float32": "^1.0.0"
+  },
   "devDependencies": {
     "browserify": "13.x.x",
     "codecov": "1.x.x",
     "istanbul": "^0.4.1",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
+    "math-power": "^1.0.0",
     "tap-spec": "4.x.x",
     "tape": "4.x.x",
     "testling": "1.x.x"
